@@ -3,7 +3,7 @@ window.onload = function() {
   let pintaRandom = document.getElementsByTagName("h3");
   let numeroRandom = numeroAleatorio();
   let valorRandom = document.getElementsByTagName("h1")[0];
-  let color = colorCard(pintaRandom);
+  let color = colorCard(pintafinal);
   pintaRandom[0].textContent = pintafinal;
   pintaRandom[1].textContent = pintafinal;
   valorRandom.textContent = numeroRandom;
@@ -37,10 +37,7 @@ function numeroAleatorio() {
 }
 
 function colorCard(x) {
-  if (x === "♦" || x === "♥" ) {
-    return "#f00";
-  }
-  else{
-    return "#00";
+  if (x == "♦" || x == "♥") {
+    return "red";
   }
 }
